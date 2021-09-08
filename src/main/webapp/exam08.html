@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form method = "get" /*defult여서 따로 안적어도 된다*/  action="result.html" >
+		<fieldset>
+			<legend>
+				이름 입력하기
+			</legend>
+			<div>
+				<label for = "user_name">이름</label>
+				<input type="text" name = "user_name" id="user_name"/>
+			</div>
+			<div>
+				<input type="submit"  value="입력완료"/> <!-- submit은 데이터를 가지고 페이지를 이동시켜주는 역할 -->
+				<input type="reset" value="다시작성"/>  <!-- 상자내의 옵션을 모두 초기화 시켜줌 -->
+				<input type="button" value="일반버튼" onclick="location.href='result.html'"/> <!-- onclick 효과 버튼을 클릭했을때의 효과를 지정-->
+				<input type="image" src="img/ok.png" width="100" height="30" alt="입력완료"/> <!-- type에 이미지태그가 오면 자동적으로 submit효과를 가짐 -->
+			</div>
+		</fieldset>
+	</form>
+</body>
+</html>
